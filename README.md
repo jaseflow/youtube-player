@@ -1,2 +1,8 @@
 # youtube-player
-Flexbox demo
+
+Build a youtube player with Flexbox
+
+```
+    npm install
+    gulp serve
+```
