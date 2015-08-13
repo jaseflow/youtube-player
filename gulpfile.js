@@ -4,8 +4,10 @@ var gulp = require("gulp"),
 
 gulp.task("serve", function() {
     browserSync.init({
-        proxy: "localhost:8000"
-    })
+        server: {
+            baseDir: "./"
+        }
+    });
     gulp.watch("src/app.css", ["css"]);
     gulp.watch("index.html").on("change", browserSync.reload);
 });
